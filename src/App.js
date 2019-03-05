@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Hour from './hour';
+import Minute from './minute';
+import Second from './second';
+import Separator from './separator';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Hour/>
+      <Separator/>
+      <Minute/>
+      <Separator/>
+      <Second/>
+       
       </div>
     );
   }
